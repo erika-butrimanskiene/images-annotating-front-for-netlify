@@ -1,0 +1,108 @@
+  .home-page {
+    background-color: var(--light-gray);
+    min-width: calc(100vw - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: calc(10px + 2vmin);
+    color: var(--dark-gray);
+  }
+
+  .home-annotating-form{
+    padding: 15px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white-color);
+  }
+
+  .home-annotating-form__heading {
+    margin: 20px 0px;
+    font-weight: 700;
+    font-size: 35px;
+    color: var(--dark-color);
+  }
+  
+  .home-annotating-form__input {
+    padding: 10px 20px;
+    background-color: var(--light-gray);
+    border-radius: 5px;
+    font-size: 20px;
+    width: 70%;
+    height: 30px;
+    border: none;
+    outline: none;
+  }
+
+  .home-annotating-form__message{
+    margin: 0px;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--dark-gray);
+  }
+  
+  .home-annotating-form__input::placeholder {
+    color: var(--contact-input-color);
+  }
+  
+  .home-annotating-form__button {
+    margin: 20px 0px;
+    padding: 10px 25px;
+    font-size: 20px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: var(--second-color);
+    color: var(--white-color);
+  }
+  
+  .home-annotating-form__button:hover {
+    transform: scale(1.15);
+  }
+
+  .home-annotated-images{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px 30px 0px;
+    width: 100%;
+  }
+
+  .home-annotated-images__select{
+    width: 85%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #home-annotated-images__select-value{
+    margin-left: 15px;
+    padding: 0px 7px;
+    background-color: var(--white-color);
+    border: none;
+    border-radius: 5px;
+    font-family: var(--main-font);
+    font-size: 18px;
+  }
+
+  #home-annotated-images__select-value:focus{
+   outline: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    .home-annotated-images__select{
+      width: 70%;
+    }
+
+  }
+  
+  @media screen and (min-width: 1025px) {
+    .home-annotated-images__select{
+      width: 50%;
+ 
+    }
+  }
